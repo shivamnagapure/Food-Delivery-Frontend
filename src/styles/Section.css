@@ -1,0 +1,228 @@
+/* Home Hero 1.0 */
+.hero_section {
+  background: url('../assets/assets/hero/hero-1.jpg') no-repeat center center; /* center the image horizontally and vertically */
+  background-size: cover; /* background image cover the entire section */
+  background-attachment: fixed;
+  padding-top: 170px;
+  padding-bottom: 90px;
+}
+
+.hero_section .price_badge{
+    background: url('../assets/assets/hero/price-badge-yellow.png') no-repeat center center ;
+    background-size: cover;
+    position: absolute;
+    width: 180px;
+    height: 176px;
+    top: -20px;
+    right: 5px;
+    text-align: center;
+}
+
+.hero_section .badge_text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* top: 50%
+    transform: translateY(-50%)
+    This is the classic technique to center content vertically. */
+}
+
+.hero_section .badge_text .h4_xs{
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1; /* line-height: 1; controls the vertical spacing between lines of text. */
+}
+
+.hero_section .badge_text .h3_lg {
+    font-size: 2.875rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero_section .hero_text h1{
+    font-family: var(--lilita-font);
+    font-size: 7rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.hero_section .hero_text h2 {
+  font-family: var(--lilita-font);
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.hero_section .hero_text p {
+  padding: 0 5%;
+}
+
+.hero_section .order_now {
+    margin-top: 20px !important;
+}
+
+/* <a> tag is inline by default → inline elements ignore vertical margin
+Adding display: inline-block or block allows margin to apply */
+
+.hero_section .order_now{
+  border: 2px solid var(--yellow);
+}
+
+/* Home About 2.0 */
+.about_section{
+  background: url("../assets/assets/about/about-1.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 300px;
+}
+
+.about_section h2 {
+  font-size: 3.5rem;
+}
+
+.about_section p {
+  color: var(--grey);
+  padding: 20px 30px;
+  font-size: 19px;
+}
+
+.about_section .order_now{
+  border: 2px solid var(--light-red);
+}
+
+.about_wrapper {
+  background: var(--yellow);
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.about_box h4 {
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0.5008px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.about_box p {
+  padding: 0 20px;
+}
+
+.about_box .about_icon img {
+  max-width: 25%;
+}
+
+/* Home Menu */
+.menu_section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.menu_section .card-img-top {
+  transition: all 500ms ease-in-out;
+}
+
+.menu_section h2 {
+  font-size: 3.5rem;
+  color: var(--light-red);
+}
+
+.menu_section .para {
+  color: var(--grey);
+  padding: 10px 100px;
+  font-size: 19px;
+}
+
+.menu_section i {
+  color: black;
+  padding-right: 5px;
+}
+
+.menu_section .wishlist i {
+  color: var(--grey);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu_section .wishlist i:hover {
+  color: var(--light-red);
+}
+
+.menu_section .card-title {
+  font-family: var(--oswald-font);
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.menu_section .card-text {
+  color: var(--grey);
+  font-size: 15px;
+}
+
+.menu_section .menu_price {
+  background-color: var(--bg-coffee);
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 4px;
+}
+
+.menu_section .menu_price h5 {
+  color: var(--yellow);
+  font-size: 1rem;
+}
+
+.menu_section .add_to_cart a {
+  color: black;
+   text-decoration: none; 
+  background: var(--yellow);
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(100px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.menu_section .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.menu_section .card:hover .add_to_cart a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+/* Media Query Mobiles */
+
+@media (max-width: 767px) {
+  /* Home Hero 1.0 */
+  .hero_section .hero_text h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width : 992px){
+  /*Home About 2.0*/
+  .about_section h2 {
+    font-size: 2.5rem;
+  }
+  .about_section p {
+    padding: 20px 0;
+  }
+  .about_box p {
+    padding: 0;
+  }
+}
