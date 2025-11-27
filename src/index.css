@@ -110,11 +110,14 @@ a {
 .btn_red {
   color: var(--white);
   background: var(--light-red);
-  border-color: var(--light-red);
+  border: 2px solid var(--light-red);   
+  text-decoration: none; 
+  transition: all 300ms ease-in-out;    /* smooth hover */
 }
+
 .btn_red:hover,
 .btn_red:focus {
   color: var(--light-red);
   background: transparent;
-  border-color: var(--light-red);
+  border: 2px solid var(--light-red) !important;   /* visible border */
 }

@@ -132,6 +132,10 @@ Adding display: inline-block or block allows margin to apply */
   color: var(--light-red);
 }
 
+.menu_section .item_rating i {
+  color: var(--yellow);
+  padding-right: 5px;
+}
 .menu_section .para {
   color: var(--grey);
   padding: 10px 100px;
@@ -204,6 +208,36 @@ Adding display: inline-block or block allows margin to apply */
   opacity: 1;
 }
 
+.menu_section .ads_box{
+  text-align: right;
+  padding: 80px 35px 50px;
+  border-radius: 6px;
+}
+
+.menu_section .ads_img1 {
+  background: url("../assets/assets/menu/ads-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.menu_section .ads_img2 {
+  background: url("../assets/assets/menu/ads-2.jpg") no-repeat center center;
+}
+
+.menu_section .ads_box h4 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--brown);
+}
+
+.menu_section .ads_box h5 {
+  font-size: 2.375rem;
+  color: var(--brown);
+}
+
+.menu_section .ads_box a {
+  margin-top: 15px;
+  font-size: 18px;
+}
 
 /* Media Query Mobiles */
 
@@ -224,5 +258,10 @@ Adding display: inline-block or block allows margin to apply */
   }
   .about_box p {
     padding: 0;
+  }
+
+  /* Home Menu 3.0 */
+  .menu_section .para {
+    padding: 10px 0px;
   }
 }
