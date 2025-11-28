@@ -5,6 +5,7 @@ import Section2 from './Section2.jsx'
 import Section3 from './Section3.jsx' 
 import Section4 from './Section4.jsx'
 import Section5 from './Section5.jsx'
+import Section6 from './Section6.jsx'
 import '../../styles/Section.css'
 const Home = () => {
   return (
@@ -24,6 +25,8 @@ const Home = () => {
 
         {/* Home Section Shop */}
         <Section5/>
+
+        <Section6/>
         
       </Layout>
     </>
